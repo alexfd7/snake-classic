@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Snake Game</title>
+    <link rel="stylesheet" href="./css/style.css">
+    
+
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen text-white">
+    <div class="text-center mb-8">
+        <h1 class="text-4xl mb-4 glow-text">NEON SNAKE</h1>
+        <div class="flex justify-center gap-8 mb-6">
+            <div>
+                <p class="text-lg text-cyan-300">SCORE</p>
+                <p id="score" class="text-2xl">0</p>
+            </div>
+            <div>
+                <p class="text-lg text-purple-300">HIGH SCORE</p>
+                <p id="high-score" class="text-2xl">0</p>
+            </div>
+        </div>
+        <button id="start-btn" class="btn-neon mb-4">START GAME</button>
+        <p class="text-xs text-gray-400 mt-2">Use arrow keys or WASD to move</p>
+    </div>
+    
+    <div class="game-container relative bg-black">
+        <canvas id="game-canvas" width="400" height="400" class="block"></canvas>
+        <div id="game-over" class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-80 hidden">
+            <h2 class="text-3xl text-red-400 mb-4 glow-text">GAME OVER</h2>
+            <p class="mb-6">Your score: <span id="final-score" class="text-yellow-300">0</span></p>
+            <button id="restart-btn" class="btn-neon">PLAY AGAIN</button>
+        </div>
+    </div>
+    
+
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>

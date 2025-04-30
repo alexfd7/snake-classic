@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #0f0f1a;
+    overflow: hidden;
+}
+
+.game-container {
+    box-shadow: 0 0 20px #00ffaa, inset 0 0 20px rgba(0, 255, 170, 0.3);
+    border: 2px solid #00ffaa;
+}
+
+.snake-segment {
+    background-color: #00ffaa;
+    box-shadow: 0 0 10px #00ffaa;
+    border-radius: 2px;
+}
+
+.food {
+    background-color: #ff00aa;
+    box-shadow: 0 0 15px #ff00aa;
+    border-radius: 50%;
+    animation: pulse 0.8s infinite alternate;
+}
+
+@keyframes pulse {
+    from { transform: scale(0.9); }
+    to { transform: scale(1.1); }
+}
+
+.glow-text {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #00ffaa, 0 0 20px #00ffaa;
+}
+
+.btn-neon {
+    background-color: transparent;
+    color: #00ffaa;
+    border: 2px solid #00ffaa;
+    padding: 10px 20px;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 0 0 5px #00ffaa;
+    box-shadow: 0 0 10px #00ffaa;
+    transition: all 0.3s;
+}
+
+.btn-neon:hover {
+    background-color: #00ffaa;
+    color: #0f0f1a;
+    box-shadow: 0 0 20px #00ffaa;
+}
+
+.grid-line {
+    border: 1px solid rgba(0, 255, 170, 0.1);
+}
+
+/* New snake eye styles */
+.snake-eye {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: #0f0f1a;
+    border-radius: 50%;
+}
